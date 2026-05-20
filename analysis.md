@@ -59,6 +59,7 @@ job:
 | Connectin | 글로벌 매칭 플랫폼, 외부 슈퍼앱(Zalo) OAuth/웹훅 연동, 소셜 피드, 다국어·현지화 UX → SNS 연동·활동 피드·다국어 자동화 | ★★★★★ |
 | P2P 크라우드펀딩 | 7 프로바이더·15+ 외부 API 통합, 가상계좌·정산 자동화, 무결성 검증 → Payoneer 글로벌 정산·10여 종 API 연동 | ★★★★☆ |
 | Series B | 대규모 관리자 대시보드, ChatGPT 연동 AI 보고서, 한/영 다국어 → 관리자/판매자 콘솔·AI 성과 리포트·Claude 상담·다국어 | ★★★★☆ |
+| AI Agent | Claude Agent SDK·MCP 기반 멀티 AI 에이전트 오케스트레이션 → 공고 핵심 배경 "AI 에이전트 자동화", Claude API 상담·외부 API 자동화·AI 리포트 | ★★★★★ |
 
 - 사전 검증 질문 1(RN 다국어 앱): 필라테스 앱(RN 멀티플랫폼 출시) + Series B(한/영 다국어) 근거. 번역 처리 방식 = i18n 정적 리소스 + 동적 콘텐츠 번역 API 이원화.
 - 사전 검증 질문 2(SNS 데이터 수집 API): Connectin(Zalo OAuth/웹훅 소셜 연동) + P2P(15+ 외부 API 통합) 근거. Phyllo도 동일 OAuth/웹훅/폴링 패턴으로 연동.
@@ -179,6 +180,12 @@ SNS 팔로워·활동 데이터 수집 API(Phyllo 등)도 동일한 OAuth 인증
 - 유사점: 대규모 관리자 대시보드 + LLM 연동 AI 리포트 + 다국어 → 관리자/판매자 콘솔·AI 성과 리포트·Claude 상담
 - 기술 스택: Next.js, NestJS, LLM API, 다국어(i18n)
 
+▶ AI 에이전트 통합 개발 프레임워크 (2026)
+- 프로젝트 유형: AI 에이전트 / 자동화 / Gen AI
+- 핵심 기능: Claude Agent SDK 기반 멀티 AI 에이전트 오케스트레이션, MCP 7종 외부 시스템 연동 자율 실행, 문서 인텔리전스(요구사항 자동 추출), 실시간 대시보드
+- 유사점: 공고 핵심 배경인 "AI 에이전트 자동화"와 직접 일치 → Claude API 실시간 번역 AI 상담·상담원 전환, 외부 영상 생성 API 자동화, AI 성과 리포트
+- 기술 스택: Claude Agent SDK, TypeScript, MCP, React 19
+
 ---
 
 <사용 기술과 툴>
@@ -207,4 +214,5 @@ SNS 팔로워·활동 데이터 수집 API(Phyllo 등)도 동일한 OAuth 인증
 2. Connectin — 글로벌 매칭 플랫폼·외부 소셜 OAuth/웹훅 연동·다국어 (질문2 직접 근거)
 3. P2P 크라우드펀딩 플랫폼 — 15+ 외부 API 통합·정산 자동화 (Payoneer 정산 근거)
 4. Series B — 관리자 대시보드·AI 자동 리포트·다국어 (관리자/판매자 콘솔·AI 리포트 근거)
+5. AI 에이전트 통합 개발 프레임워크 — Claude Agent SDK·MCP 기반 AI 에이전트 자동화 (공고 핵심 배경·Claude API 상담 근거)
 
