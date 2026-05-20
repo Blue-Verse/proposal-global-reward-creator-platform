@@ -157,6 +157,7 @@
           <div class="my-3 border-t border-slate-200"></div>
           <p class="mb-2 mt-1 px-1 text-sm font-semibold tracking-[0.14em] text-slate-400">일정 & 경험</p>
           <a href="#timeline" data-page="timeline" class="nav-link block rounded-xl border border-transparent px-3 py-2 text-sm text-slate-600 hover:border-slate-200 hover:bg-slate-50 hover:text-slate-900">일정 제안</a>
+          <a href="#process" data-page="process" class="nav-link block rounded-xl border border-transparent px-3 py-2 text-sm text-slate-600 hover:border-slate-200 hover:bg-slate-50 hover:text-slate-900">업무 프로세스</a>
           <a href="#portfolio" data-page="portfolio" class="nav-link block rounded-xl border border-transparent px-3 py-2 text-sm text-slate-600 hover:border-slate-200 hover:bg-slate-50 hover:text-slate-900">유사 프로젝트 경험</a>
         </nav>
       </aside>
@@ -207,6 +208,11 @@
               <div class="mb-3 inline-flex rounded-full border px-2.5 py-1 text-sm font-semibold tracking-[0.12em] bg-amber-100 text-amber-700 border-amber-200">일정</div>
               <h2 class="text-lg font-semibold tracking-tight text-slate-900 group-hover:text-sky-700">일정 제안</h2>
               <p class="mt-2 text-sm leading-7 text-slate-600">단계별 마일스톤 및 산출물 일정표</p>
+            </a>
+            <a href="#process" class="group rounded-2xl border border-slate-200/70 bg-white/90 p-5 shadow-soft transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-white">
+              <div class="mb-3 inline-flex rounded-full border px-2.5 py-1 text-sm font-semibold tracking-[0.12em] bg-amber-100 text-amber-700 border-amber-200">프로세스</div>
+              <h2 class="text-lg font-semibold tracking-tight text-slate-900 group-hover:text-sky-700">업무 프로세스</h2>
+              <p class="mt-2 text-sm leading-7 text-slate-600">팀 구성, 스프린트 진행, 병렬 트랙, 유지보수 운영안</p>
             </a>
             <a href="#portfolio" class="group rounded-2xl border border-slate-200/70 bg-white/90 p-5 shadow-soft transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-white">
               <div class="mb-3 inline-flex rounded-full border px-2.5 py-1 text-sm font-semibold tracking-[0.12em] bg-amber-100 text-amber-700 border-amber-200">경험</div>
@@ -269,6 +275,117 @@
                 <li><strong>멀티 콘솔</strong> — 관리자(운영 전체)·판매자(조회 전용) PC 웹 분리 구축 및 스토어 등록·심사 대응</li>
               </ul>
 
+              <h2>주요 화면 구상 (목업)</h2>
+              <p>공고의 요구 기능과 글로벌 어필리에이트 플랫폼 벤치마킹(GRIN·Aspire·Impact.com·TikTok Shop·Levanta·Shopify Collabs)을 반영하여 핵심 화면 구조를 시각화한 와이어프레임입니다. 실제 디자인은 Phase 1 Figma 단계에서 제공 기획서·와이어프레임을 반영하여 최종 확정합니다.</p>
+
+              <div class="not-prose grid gap-4 md:grid-cols-2">
+                <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft">
+                  <p class="mb-2 text-sm font-semibold text-sky-700">크리에이터 앱 — 홈 제품 마켓 & 등급</p>
+                  <p class="mb-3 text-sm text-slate-500">상단 등급/누적 보상 + 제품 마켓 카드 + 하단 탭바</p>
+                  <svg viewBox="0 0 300 540" xmlns="http://www.w3.org/2000/svg" class="w-full max-w-xs mx-auto h-auto">
+                    <defs>
+                      <linearGradient id="phoneBg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#e0f2fe"/></linearGradient>
+                      <linearGradient id="prod1" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#bae6fd"/><stop offset="1" stop-color="#c7d2fe"/></linearGradient>
+                      <linearGradient id="prod2" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#a7f3d0"/><stop offset="1" stop-color="#bae6fd"/></linearGradient>
+                    </defs>
+                    <rect x="6" y="6" width="288" height="528" rx="32" fill="#0f172a"/>
+                    <rect x="14" y="14" width="272" height="512" rx="26" fill="url(#phoneBg)"/>
+                    <rect x="120" y="20" width="60" height="14" rx="7" fill="#0f172a"/>
+                    <text x="28" y="62" font-family="SUIT Variable, sans-serif" font-size="17" font-weight="700" fill="#0f172a">Marketplace</text>
+                    <circle cx="262" cy="56" r="9" fill="none" stroke="#475569" stroke-width="1.5"/><circle cx="262" cy="54" r="2" fill="#ef4444"/>
+                    <!-- Grade / reward card -->
+                    <rect x="22" y="76" width="256" height="56" rx="12" fill="#0284c7"/>
+                    <text x="36" y="100" font-family="SUIT Variable, sans-serif" font-size="11" fill="#e0f2fe">내 등급</text>
+                    <text x="36" y="120" font-family="SUIT Variable, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Gold · Lv.4</text>
+                    <text x="180" y="100" font-family="SUIT Variable, sans-serif" font-size="10" fill="#bae6fd">누적 보상</text>
+                    <text x="180" y="120" font-family="SUIT Variable, sans-serif" font-size="15" font-weight="700" fill="#ffffff">$1,240</text>
+                    <!-- filter chips -->
+                    <rect x="22" y="146" width="48" height="20" rx="10" fill="#0284c7"/><text x="46" y="160" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#fff">전체</text>
+                    <rect x="76" y="146" width="56" height="20" rx="10" fill="#e2e8f0"/><text x="104" y="160" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#475569">뷰티</text>
+                    <rect x="138" y="146" width="56" height="20" rx="10" fill="#e2e8f0"/><text x="166" y="160" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#475569">패션</text>
+                    <!-- product cards -->
+                    <rect x="22" y="178" width="122" height="150" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+                    <rect x="30" y="186" width="106" height="80" rx="8" fill="url(#prod1)"/>
+                    <text x="30" y="284" font-family="SUIT Variable, sans-serif" font-size="10" font-weight="600" fill="#0f172a">글로우 세럼</text>
+                    <text x="30" y="300" font-family="SUIT Variable, sans-serif" font-size="9" fill="#0284c7">커미션 18%</text>
+                    <rect x="30" y="308" width="106" height="14" rx="7" fill="#0284c7"/><text x="83" y="319" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="8" fill="#fff">추적 링크 생성</text>
+                    <rect x="156" y="178" width="122" height="150" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+                    <rect x="164" y="186" width="106" height="80" rx="8" fill="url(#prod2)"/>
+                    <text x="164" y="284" font-family="SUIT Variable, sans-serif" font-size="10" font-weight="600" fill="#0f172a">데일리 톤업</text>
+                    <text x="164" y="300" font-family="SUIT Variable, sans-serif" font-size="9" fill="#0284c7">커미션 22%</text>
+                    <rect x="164" y="308" width="106" height="14" rx="7" fill="#0284c7"/><text x="217" y="319" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="8" fill="#fff">추적 링크 생성</text>
+                    <!-- activity feed strip -->
+                    <text x="22" y="356" font-family="SUIT Variable, sans-serif" font-size="11" font-weight="600" fill="#0f172a">실시간 활동 피드</text>
+                    <rect x="22" y="366" width="256" height="34" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+                    <text x="34" y="380" font-family="SUIT Variable, sans-serif" font-size="9" fill="#475569">@mina_beauty 판매 1건 · +$12</text>
+                    <text x="34" y="393" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">2분 전 · TikTok Shop</text>
+                    <!-- bottom tab bar -->
+                    <rect x="14" y="486" width="272" height="40" rx="0" fill="#ffffff"/>
+                    <line x1="14" y1="486" x2="286" y2="486" stroke="#e2e8f0"/>
+                    <text x="50" y="510" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#0284c7">마켓</text>
+                    <text x="110" y="510" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">랭킹</text>
+                    <text x="170" y="510" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">스케줄</text>
+                    <text x="230" y="510" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">AI 상담</text>
+                  </svg>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft">
+                  <p class="mb-2 text-sm font-semibold text-sky-700">관리자 웹 — 운영 대시보드 & 정산</p>
+                  <p class="mb-3 text-sm text-slate-500">사이드바 + 통계 카드 + Payoneer 정산 큐 테이블</p>
+                  <svg viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                    <rect x="0" y="0" width="500" height="320" rx="10" fill="#f8fafc"/>
+                    <rect x="0" y="0" width="120" height="320" fill="#0f172a"/>
+                    <text x="14" y="28" font-family="SUIT Variable, sans-serif" font-size="12" font-weight="700" fill="#e2e8f0">Reward Admin</text>
+                    <rect x="8" y="46" width="104" height="22" rx="5" fill="#0284c7"/><text x="14" y="62" font-family="SUIT Variable, sans-serif" font-size="10" fill="#e0f2fe">대시보드</text>
+                    <text x="14" y="88" font-family="SUIT Variable, sans-serif" font-size="10" fill="#94a3b8">회원 랭킹</text>
+                    <text x="14" y="108" font-family="SUIT Variable, sans-serif" font-size="10" fill="#94a3b8">보상 정산</text>
+                    <text x="14" y="128" font-family="SUIT Variable, sans-serif" font-size="10" fill="#94a3b8">물류·재고</text>
+                    <text x="14" y="148" font-family="SUIT Variable, sans-serif" font-size="10" fill="#94a3b8">제품 관리</text>
+                    <text x="14" y="168" font-family="SUIT Variable, sans-serif" font-size="10" fill="#94a3b8">이벤트·공지</text>
+                    <text x="14" y="188" font-family="SUIT Variable, sans-serif" font-size="10" fill="#94a3b8">등급·보상 기준</text>
+                    <text x="135" y="30" font-family="SUIT Variable, sans-serif" font-size="13" font-weight="700" fill="#0f172a">전체 현황</text>
+                    <rect x="135" y="45" width="110" height="56" rx="6" fill="#fff" stroke="#e2e8f0"/><text x="145" y="62" font-family="SUIT Variable, sans-serif" font-size="9" fill="#64748b">활성 크리에이터</text><text x="145" y="84" font-family="SUIT Variable, sans-serif" font-size="16" font-weight="700" fill="#0284c7">2,180</text>
+                    <rect x="253" y="45" width="110" height="56" rx="6" fill="#fff" stroke="#e2e8f0"/><text x="263" y="62" font-family="SUIT Variable, sans-serif" font-size="9" fill="#64748b">월 정산 예정</text><text x="263" y="84" font-family="SUIT Variable, sans-serif" font-size="16" font-weight="700" fill="#0284c7">$92.4K</text>
+                    <rect x="371" y="45" width="115" height="56" rx="6" fill="#fff" stroke="#e2e8f0"/><text x="381" y="62" font-family="SUIT Variable, sans-serif" font-size="9" fill="#64748b">정산 대기</text><text x="381" y="84" font-family="SUIT Variable, sans-serif" font-size="16" font-weight="700" fill="#f59e0b">37건</text>
+                    <rect x="135" y="115" width="351" height="190" rx="6" fill="#fff" stroke="#e2e8f0"/>
+                    <text x="145" y="135" font-family="SUIT Variable, sans-serif" font-size="11" font-weight="600" fill="#0f172a">Payoneer 정산 큐 (14일 주기)</text>
+                    <line x1="145" y1="146" x2="476" y2="146" stroke="#e2e8f0"/>
+                    <text x="145" y="162" font-family="SUIT Variable, sans-serif" font-size="9" fill="#64748b">크리에이터</text><text x="255" y="162" font-family="SUIT Variable, sans-serif" font-size="9" fill="#64748b">국가</text><text x="320" y="162" font-family="SUIT Variable, sans-serif" font-size="9" fill="#64748b">정산액</text><text x="420" y="162" font-family="SUIT Variable, sans-serif" font-size="9" fill="#64748b">상태</text>
+                    <line x1="145" y1="170" x2="476" y2="170" stroke="#e2e8f0"/>
+                    <text x="145" y="188" font-family="SUIT Variable, sans-serif" font-size="10" fill="#0f172a">@mina_beauty</text><text x="255" y="188" font-family="SUIT Variable, sans-serif" font-size="10" fill="#475569">US</text><text x="320" y="188" font-family="SUIT Variable, sans-serif" font-size="10" fill="#475569">$420</text><rect x="415" y="178" width="48" height="16" rx="8" fill="#dcfce7"/><text x="439" y="190" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#166534">정산완료</text>
+                    <text x="145" y="212" font-family="SUIT Variable, sans-serif" font-size="10" fill="#0f172a">@hana_vlog</text><text x="255" y="212" font-family="SUIT Variable, sans-serif" font-size="10" fill="#475569">VN</text><text x="320" y="212" font-family="SUIT Variable, sans-serif" font-size="10" fill="#475569">$215</text><rect x="415" y="202" width="48" height="16" rx="8" fill="#fef3c7"/><text x="439" y="214" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#92400e">대기중</text>
+                    <text x="145" y="236" font-family="SUIT Variable, sans-serif" font-size="10" fill="#0f172a">@yuki_style</text><text x="255" y="236" font-family="SUIT Variable, sans-serif" font-size="10" fill="#475569">JP</text><text x="320" y="236" font-family="SUIT Variable, sans-serif" font-size="10" fill="#475569">$680</text><rect x="415" y="226" width="48" height="16" rx="8" fill="#fef3c7"/><text x="439" y="238" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#92400e">대기중</text>
+                    <text x="145" y="260" font-family="SUIT Variable, sans-serif" font-size="10" fill="#0f172a">@bella_co</text><text x="255" y="260" font-family="SUIT Variable, sans-serif" font-size="10" fill="#475569">US</text><text x="320" y="260" font-family="SUIT Variable, sans-serif" font-size="10" fill="#475569">$310</text><rect x="415" y="250" width="48" height="16" rx="8" fill="#dcfce7"/><text x="439" y="262" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#166534">정산완료</text>
+                    <text x="145" y="290" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">유사 구조: 핀테크 정산 대시보드 + B2B SaaS 운영 콘솔 패턴 재활용</text>
+                  </svg>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft md:col-span-2">
+                  <p class="mb-2 text-sm font-semibold text-sky-700">판매자 웹 (조회 전용) — 매출 & AI 성과 리포트</p>
+                  <p class="mb-3 text-sm text-slate-500">매출 추이 차트 + 홍보 현황 + AI 성과 요약 리포트</p>
+                  <svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                    <rect x="0" y="0" width="700" height="240" rx="10" fill="#f8fafc"/>
+                    <text x="20" y="30" font-family="SUIT Variable, sans-serif" font-size="13" font-weight="700" fill="#0f172a">브랜드 판매자 대시보드</text>
+                    <!-- chart card -->
+                    <rect x="20" y="44" width="340" height="176" rx="8" fill="#fff" stroke="#e2e8f0"/>
+                    <text x="32" y="64" font-family="SUIT Variable, sans-serif" font-size="10" fill="#64748b">월별 매출 (홍보 기여)</text>
+                    <polyline points="40,180 90,160 140,168 190,130 240,120 290,90 340,70" fill="none" stroke="#0284c7" stroke-width="2.5"/>
+                    <line x1="40" y1="195" x2="345" y2="195" stroke="#e2e8f0"/>
+                    <circle cx="290" cy="90" r="3" fill="#0284c7"/><circle cx="340" cy="70" r="3" fill="#0284c7"/>
+                    <text x="40" y="210" font-family="SUIT Variable, sans-serif" font-size="8" fill="#94a3b8">1월</text><text x="330" y="210" font-family="SUIT Variable, sans-serif" font-size="8" fill="#94a3b8">7월</text>
+                    <!-- KPI -->
+                    <rect x="372" y="44" width="146" height="84" rx="8" fill="#fff" stroke="#e2e8f0"/><text x="384" y="64" font-family="SUIT Variable, sans-serif" font-size="9" fill="#64748b">홍보 진행 크리에이터</text><text x="384" y="92" font-family="SUIT Variable, sans-serif" font-size="20" font-weight="700" fill="#0284c7">148명</text><text x="384" y="112" font-family="SUIT Variable, sans-serif" font-size="9" fill="#10b981">▲ 전월 +23명</text>
+                    <rect x="528" y="44" width="152" height="84" rx="8" fill="#fff" stroke="#e2e8f0"/><text x="540" y="64" font-family="SUIT Variable, sans-serif" font-size="9" fill="#64748b">재고 / 발송 현황</text><text x="540" y="92" font-family="SUIT Variable, sans-serif" font-size="20" font-weight="700" fill="#0f172a">1,820</text><text x="540" y="112" font-family="SUIT Variable, sans-serif" font-size="9" fill="#f59e0b">발송 대기 64건</text>
+                    <!-- AI report card -->
+                    <rect x="372" y="138" width="308" height="82" rx="8" fill="#eff6ff" stroke="#bfdbfe"/>
+                    <text x="384" y="158" font-family="SUIT Variable, sans-serif" font-size="10" font-weight="700" fill="#1d4ed8">AI 성과 리포트</text>
+                    <text x="384" y="176" font-family="SUIT Variable, sans-serif" font-size="9" fill="#334155">· 이번 주 전환율 최고 채널: TikTok Shop (4.2%)</text>
+                    <text x="384" y="190" font-family="SUIT Variable, sans-serif" font-size="9" fill="#334155">· Gold 등급 크리에이터 매출 기여 62%</text>
+                    <text x="384" y="204" font-family="SUIT Variable, sans-serif" font-size="9" fill="#334155">· 추천: 동남아 타깃 신규 제품 시딩 확대</text>
+                  </svg>
+                </div>
+              </div>
+
               <h2>제안 포인트</h2>
               <p><strong>1. React Native 하이브리드 앱 + 멀티 플랫폼 동시 출시 경험.</strong> React Native로 iOS·Android·반응형 웹을 동시 출시한 프랜차이즈 관리 앱 수행 경험을 보유하고 있어, 단일 코드베이스로 양 스토어 심사까지 대응하는 본 프로젝트 구조에 즉시 투입 가능합니다.</p>
               <p><strong>2. 글로벌 다국어 대응이 가능한 팀 구성.</strong> 영어 네이티브(미국) 인력과 영어 구사가 가능한 베트남 인력을 보유하고 있어, 영문 UX 카피 검수·글로벌 크리에이터 대상 영문 상담 시나리오 설계·다국어 QA를 네이티브 수준으로 수행할 수 있습니다. 실제로 베트남 시장을 겨냥한 글로벌 네트워킹 플랫폼(Connectin)을 현지화 UX 기준으로 구축·운영한 경험이 있어, 단순 기계 번역을 넘어 글로벌 사용자에게 자연스러운 다국어 경험을 제공합니다.</p>
@@ -276,6 +393,7 @@
               <p><strong>4. 글로벌 정산·트랜잭션 무결성 설계.</strong> 가상계좌 입출금·원리금 정산·은행 영업일 인식 정산을 자체 구현한 핀테크 경험을 바탕으로, Payoneer 정산의 멱등성(idempotency)·재시도·정합성 검증을 설계 단계부터 반영합니다.</p>
               <p><strong>5. AI 에이전트 자동화 + 관리자 대시보드 경험.</strong> 본 프로젝트의 핵심 배경인 "AI 에이전트 자동화"와 관련하여, Claude Agent SDK·MCP 기반 멀티 AI 에이전트 오케스트레이션 프레임워크를 직접 구축한 경험을 보유합니다. VC 펀드 관리 SaaS의 ChatGPT 연동 AI 보고서 자동 생성 및 200개 이상 관리자 API 경험과 결합하여, Claude API 실시간 번역 AI 상담·상담원 전환과 AI 성과 리포트, 관리자/판매자 대시보드를 검증된 패턴으로 제공합니다.</p>
               <p><strong>6. 우선순위 기반 단계별 납품.</strong> 산출물 완성도(1순위)와 일정 준수(2순위)를 동시에 달성하기 위해, 핵심 마켓플레이스·정산을 우선 납품하고 AI 숏폼·성과 리포트 등 부가 기능을 후속 단계로 배치하는 단계별 납품 구조를 제안합니다.</p>
+              <p><strong>7. 글로벌 어필리에이트 플랫폼 벤치마킹 기반 설계.</strong> GRIN·Aspire·Impact.com·TikTok Shop·Levanta·Shopify Collabs 등 선도 어필리에이트/크리에이터 플랫폼을 분석하여 검증된 표준 패턴을 설계에 반영합니다. ① 크리에이터별 고유 추적 링크·코드 자동 발급·갱신, ② 등급별 차등 커미션 및 결제 시점 등급 스냅샷, ③ 14일 주기 정산 사이클(Payoneer), ④ 판매·전환·리뎀션 실시간 성과 대시보드, ⑤ AI 기반 자동 상담·성과 리포트 — 글로벌 사용자가 익숙한 UX와 정산 흐름으로 초기 신뢰도를 높입니다.</p>
 
               <h2>사용 기술 및 툴</h2>
               <h3>개발 기술</h3>
@@ -347,7 +465,7 @@
                 <li>UI/UX 디자인 원본 파일 (Figma)</li>
                 <li>관리자 및 사용자 매뉴얼</li>
                 <li>iOS App Store · Android Play Store 등록 및 심사 대응</li>
-                <li>1개월 무상 하자 보수</li>
+                <li>3개월 무상 하자 보수</li>
               </ul>
 
               <h2>불포함 사항</h2>
@@ -355,7 +473,7 @@
                 <li>서버 호스팅 비용 (클라우드 인프라)</li>
                 <li>도메인 구매 비용 및 앱 스토어 개발자 계정 비용</li>
                 <li>외부 유료 API 사용료 (Phyllo, Payoneer, GPT Image 등 종량/구독 요금)</li>
-                <li>하자 보수 기간 이후 월 단위 유지보수 (미팅 시 별도 협의)</li>
+                <li>3개월 하자 보수 기간 이후 월 단위 유지보수 (미팅 시 별도 협의)</li>
               </ul>
             </article>
           </div>
@@ -366,54 +484,77 @@
           <div class="rounded-2xl border border-slate-200/70 bg-white/95 p-5 shadow-soft backdrop-blur md:p-8">
             <article class="doc-content">
               <h1>공수계산서</h1>
-              <blockquote>기능별 개발 공수(Man-Day)를 산출하여 일정과 비용의 근거를 제시합니다.</blockquote>
+              <blockquote>전담 팀(PO 1 · 기획 1 · 디자이너 1 · 프론트엔드 2 · 백엔드 1 · QA 1, 총 7인)을 투입하여 역할별 공수를 산출합니다. 디자인↔개발↔QA를 병렬 트랙으로 진행하여 180일 내 단계별 납품이 가능합니다.</blockquote>
 
-              <h2>공수 요약</h2>
-              <table>
-                <tr><th>구분</th><th>공수 (M/D)</th><th>비율</th></tr>
-                <tr><td>기획/설계</td><td>24 M/D</td><td>10%</td></tr>
-                <tr><td>UI/UX 디자인</td><td>30 M/D</td><td>13%</td></tr>
-                <tr><td>프론트엔드</td><td>66 M/D</td><td>29%</td></tr>
-                <tr><td>백엔드</td><td>84 M/D</td><td>37%</td></tr>
-                <tr><td>QA/배포</td><td>26 M/D</td><td>11%</td></tr>
-                <tr><th>합계</th><th>230 M/D</th><th>100%</th></tr>
-              </table>
-
-              <h2>기능별 상세 공수</h2>
+              <h2>투입 인력 구성</h2>
               <table>
                 <thead>
-                  <tr><th>기능</th><th>세부 작업</th><th>담당</th><th>공수 (M/D)</th></tr>
+                  <tr><th>역할</th><th>인원</th><th>주요 담당</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td rowspan="2">기획/설계</td><td>요구사항 고도화, 화면설계 검토, 시스템 아키텍처</td><td>기획</td><td>14</td></tr>
-                  <tr><td>DB·ERD 설계, API 연동 규격서</td><td>설계</td><td>10</td></tr>
-                  <tr><td>UI/UX 디자인</td><td>앱·관리자/판매자 웹·랜딩 전체 화면 Figma</td><td>디자인</td><td>30</td></tr>
-                  <tr><td rowspan="2">랜딩페이지</td><td>7섹션 반응형 웹 + 다국어 자동번역</td><td>FE</td><td>6</td></tr>
-                  <tr><td>앱 다운로드 딥링크 연결</td><td>FE</td><td>2</td></tr>
-                  <tr><td rowspan="4">모바일 앱 (RN)</td><td>이메일·SNS 가입(TikTok Login Kit), 홈 마켓·스케줄 달력</td><td>FE</td><td>14</td></tr>
-                  <tr><td>위시리스트·활동 피드·보상 내역·등급 표시</td><td>FE</td><td>12</td></tr>
-                  <tr><td>실시간 랭킹 탭, AI 상담(번역)·상담원 전환 UI</td><td>FE</td><td>10</td></tr>
-                  <tr><td>AI 숏폼 영상 재생 화면</td><td>FE</td><td>6</td></tr>
-                  <tr><td rowspan="2">관리자/판매자 웹</td><td>관리자 대시보드·회원 랭킹·스케줄·보상/물류/재고 관리</td><td>FE</td><td>10</td></tr>
-                  <tr><td>판매자 조회 전용 대시보드 + AI 성과 리포트 화면</td><td>FE</td><td>6</td></tr>
-                  <tr><td rowspan="2">다국어/공통</td><td>i18n 정적 리소스 + 동적 콘텐츠 번역 파이프라인</td><td>BE</td><td>10</td></tr>
-                  <tr><td>인증·계정 연동(이메일/SNS OAuth)</td><td>BE</td><td>8</td></tr>
-                  <tr><td rowspan="2">SNS·판매 추적</td><td>Phyllo 연동 팔로워 수집 + 5단계 등급 자동 산정</td><td>BE</td><td>12</td></tr>
-                  <tr><td>TikTok Shop·Shopify 판매 추적 링크 자동 생성</td><td>BE</td><td>12</td></tr>
-                  <tr><td rowspan="2">정산/관리</td><td>Payoneer Mass Payout 정산·무결성 검증·재시도</td><td>BE</td><td>14</td></tr>
-                  <tr><td>제품 자동 등록(Google Sheets)·다국어 번역·GPT Image</td><td>BE</td><td>10</td></tr>
-                  <tr><td rowspan="2">AI/실시간</td><td>Claude API 상담 + 실시간 번역, 외부 영상 생성 API</td><td>BE</td><td>10</td></tr>
+                  <tr><td>PO (총괄)</td><td>1</td><td>일정·리스크 관리, 클라이언트 커뮤니케이션, 스프린트 운영, 산출물 검수</td></tr>
+                  <tr><td>기획</td><td>1</td><td>요구사항 고도화, 화면설계 정리, 기능 명세, 정책 정의</td></tr>
+                  <tr><td>디자이너</td><td>1</td><td>디자인 시스템, 앱·관리자/판매자 웹·랜딩 Figma</td></tr>
+                  <tr><td>프론트엔드</td><td>2</td><td>FE#1 RN 앱 / FE#2 관리자·판매자 웹·랜딩</td></tr>
+                  <tr><td>백엔드</td><td>1</td><td>다국어, 10여 종 외부 API 연동, 정산, Redis, 비즈니스 로직</td></tr>
+                  <tr><td>QA</td><td>1</td><td>통합 테스트, 동시성·정산 시나리오 검증, 스토어 심사 대응</td></tr>
+                </tbody>
+              </table>
+
+              <h2>공수 요약 (역할별)</h2>
+              <table>
+                <tr><th>역할</th><th>공수 (M/D)</th><th>비율</th></tr>
+                <tr><td>PO (총괄)</td><td>24 M/D</td><td>9%</td></tr>
+                <tr><td>기획</td><td>24 M/D</td><td>9%</td></tr>
+                <tr><td>디자이너</td><td>33 M/D</td><td>13%</td></tr>
+                <tr><td>프론트엔드 (FE×2)</td><td>69 M/D</td><td>27%</td></tr>
+                <tr><td>백엔드 (BE×1)</td><td>83 M/D</td><td>33%</td></tr>
+                <tr><td>QA</td><td>21 M/D</td><td>8%</td></tr>
+                <tr><th>합계</th><th>254 M/D</th><th>100%</th></tr>
+              </table>
+
+              <h2>기능별 상세 공수 (역할별 배정)</h2>
+              <table>
+                <thead>
+                  <tr><th>영역</th><th>세부 작업</th><th>담당</th><th>공수 (M/D)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td rowspan="2">기획/설계</td><td>요구사항 고도화·기능 명세·정책 정의</td><td>기획</td><td>16</td></tr>
+                  <tr><td>화면설계(IA·플로우) 검토·정리</td><td>기획</td><td>8</td></tr>
+                  <tr><td rowspan="2">아키텍처/DB</td><td>시스템 아키텍처 설계</td><td>BE</td><td>5</td></tr>
+                  <tr><td>DB·ERD 설계, API 연동 규격서</td><td>BE</td><td>7</td></tr>
+                  <tr><td rowspan="3">디자인</td><td>디자인 시스템(컬러·타이포·컴포넌트)</td><td>디자이너</td><td>8</td></tr>
+                  <tr><td>앱 전체 화면 Figma</td><td>디자이너</td><td>13</td></tr>
+                  <tr><td>관리자/판매자 웹·랜딩 Figma</td><td>디자이너</td><td>12</td></tr>
+                  <tr><td rowspan="2">랜딩페이지</td><td>7섹션 반응형 + 다국어 자동번역</td><td>FE#2</td><td>6</td></tr>
+                  <tr><td>앱 다운로드 딥링크 연결</td><td>FE#2</td><td>2</td></tr>
+                  <tr><td rowspan="4">모바일 앱 (RN)</td><td>이메일·SNS 가입(TikTok Login Kit), 홈 마켓·스케줄 달력</td><td>FE#1</td><td>14</td></tr>
+                  <tr><td>위시리스트·활동 피드·보상 내역·등급 표시</td><td>FE#1</td><td>12</td></tr>
+                  <tr><td>실시간 랭킹 탭, AI 상담(번역)·상담원 전환 UI</td><td>FE#1</td><td>10</td></tr>
+                  <tr><td>AI 숏폼 영상 재생 화면</td><td>FE#1</td><td>6</td></tr>
+                  <tr><td rowspan="2">관리자/판매자 웹</td><td>관리자 대시보드·회원 랭킹·스케줄·보상/물류/재고</td><td>FE#2</td><td>12</td></tr>
+                  <tr><td>판매자 조회 대시보드 + AI 성과 리포트 화면</td><td>FE#2</td><td>7</td></tr>
+                  <tr><td rowspan="8">백엔드</td><td>i18n 정적 + 동적 콘텐츠 번역 파이프라인</td><td>BE</td><td>8</td></tr>
+                  <tr><td>인증·계정 연동(이메일/SNS OAuth)</td><td>BE</td><td>7</td></tr>
+                  <tr><td>Phyllo 팔로워 수집 + 5단계 등급 자동 산정</td><td>BE</td><td>10</td></tr>
+                  <tr><td>TikTok Shop·Shopify 판매 추적 링크 자동 생성</td><td>BE</td><td>10</td></tr>
+                  <tr><td>Payoneer Mass Payout 정산·무결성·재시도</td><td>BE</td><td>12</td></tr>
+                  <tr><td>제품 자동 등록(Google Sheets)·다국어·GPT Image</td><td>BE</td><td>8</td></tr>
+                  <tr><td>Claude API 상담 + 실시간 번역, 외부 영상 생성 API</td><td>BE</td><td>8</td></tr>
                   <tr><td>Redis 실시간 랭킹·캐싱, FCM/WhatsApp 알림</td><td>BE</td><td>8</td></tr>
-                  <tr><td>QA/배포</td><td>통합 테스트, 스토어 등록·심사 대응, 배포·안정화</td><td>QA</td><td>26</td></tr>
+                  <tr><td rowspan="2">QA/배포</td><td>통합 테스트·동시성/정산 시나리오 검증</td><td>QA</td><td>13</td></tr>
+                  <tr><td>iOS/Android 스토어 등록·심사 대응, 배포·안정화</td><td>QA</td><td>8</td></tr>
+                  <tr><td>총괄</td><td>프로젝트 관리·일정/리스크·클라이언트 커뮤니케이션·스프린트 운영</td><td>PO</td><td>24</td></tr>
                 </tbody>
               </table>
 
               <h2>산정 기준</h2>
               <ul>
-                <li>1 M/D = 8시간 기준 (1인 1일 작업량)</li>
-                <li>주 5일 근무 기준</li>
-                <li>버퍼 10~15% 포함</li>
-                <li>유사 프로젝트(RN 멀티플랫폼, 다수 외부 API, 핀테크 정산) 수행 경험 기반 효율적 개발</li>
+                <li>1 M/D = 8시간 기준 (1인 1일 작업량), 주 5일 근무</li>
+                <li>전담 팀 7인(PO 1·기획 1·디자이너 1·FE 2·BE 1·QA 1) 투입, 업무량에 따라 유동적으로 배분</li>
+                <li>디자인 확정 후 FE 착수, BE는 인프라·API 설계부터 선행 → 디자인↔개발↔QA <strong>병렬 트랙</strong> 진행</li>
+                <li>버퍼 10~15% 포함, 클라이언트 커뮤니케이션 오버헤드 PO 공수에 반영</li>
+                <li>총 254 M/D를 7인이 분담하여 180일(약 25주) 내 단계별 납품</li>
               </ul>
             </article>
           </div>
@@ -499,7 +640,7 @@
               <h2>6. 범위 외 사항 (Out of Scope)</h2>
               <ul>
                 <li>외부 유료 API의 사용 요금 및 개발자 계정 발급 비용 (클라이언트 협의 발급)</li>
-                <li>하자 보수 기간 이후 월 단위 유지보수 (미팅 시 별도 협의)</li>
+                <li>3개월 하자 보수 기간 이후 월 단위 유지보수 (미팅 시 별도 협의)</li>
                 <li>서버 호스팅·도메인·스토어 개발자 계정 비용</li>
                 <li>상세 기획서/와이어프레임 신규 작성 (제공 자료 기반 고도화로 진행)</li>
               </ul>
@@ -609,13 +750,164 @@
           </div>
         </div>
 
+        <!-- PAGE: 업무 프로세스 -->
+        <div id="page-process" class="page-section space-y-6">
+          <div class="rounded-2xl border border-slate-200/70 bg-white/95 p-5 shadow-soft backdrop-blur md:p-8">
+            <article class="doc-content">
+              <h1>업무 프로세스</h1>
+              <blockquote>전담 팀 7인이 2주 단위 스프린트와 병렬 트랙으로 진행하며, 클라이언트는 협업툴에서 진행 상황을 실시간으로 확인합니다. 본 페이지는 (1) 팀 운영 방식, (2) 협업 도구, (3) 단계별 업무 흐름, (4) 의사결정 프로세스, (5) 유지보수 운영안을 담습니다.</blockquote>
+
+              <h2>1. 팀 운영 — 2주 스프린트 + 실시간 트래킹</h2>
+              <p>매 2주 스프린트 종료 시 구현 기능 데모를 진행하고, 피드백을 즉시 수정 또는 다음 스프린트 백로그 우선순위로 반영합니다. 별도의 일일 보고 미팅 없이 클라이언트가 협업툴(Jira·GitHub·Figma)에서 작업 상태를 직접 확인하며, 이슈·문의는 Slack/카카오톡으로 영업시간 4시간 이내 응답합니다.</p>
+              <ul>
+                <li><strong>스프린트 주기</strong>: 2주 단위 반복 (총 약 12스프린트 / 180일)</li>
+                <li><strong>스프린트 종료</strong>: 데모 시연 + 회고 → 즉시 수정 또는 백로그 우선순위 조정</li>
+                <li><strong>역할 분담</strong>: PO(총괄·검수), 기획, 디자이너, FE×2(앱/웹), BE×1, QA — 업무량에 따라 유동 배분</li>
+              </ul>
+
+              <h2>2. 협업 도구</h2>
+              <table>
+                <thead>
+                  <tr><th>용도</th><th>도구</th><th>활용 방식</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>이슈·백로그</td><td>Jira (또는 GitHub Projects)</td><td>Epic→Story→Task, 스프린트 보드·번다운. 클라이언트 실시간 확인</td></tr>
+                  <tr><td>문서·정책</td><td>Notion / Confluence</td><td>요구사항·정책 결정서·API 명세·회의록 단일 진실 공급원(SSOT)</td></tr>
+                  <tr><td>비동기 소통</td><td>Slack / 카카오톡</td><td>토픽별 채널, 영업시간 4시간 이내 응답</td></tr>
+                  <tr><td>데모·리뷰</td><td>Zoom / Google Meet</td><td>2주마다 스프린트 데모 + 마일스톤 리뷰</td></tr>
+                  <tr><td>소스·CI/CD</td><td>GitHub · GitHub Actions</td><td>Git Flow, PR 리뷰, 자동 빌드/테스트, 스테이징 자동 배포</td></tr>
+                  <tr><td>API 문서</td><td>Swagger / OpenAPI</td><td>코드 기반 자동 생성, 상시 호스팅</td></tr>
+                  <tr><td>디자인 협업</td><td>Figma</td><td>시안·컴포넌트·인스펙트 핸드오프, 클라이언트 코멘트</td></tr>
+                </tbody>
+              </table>
+
+              <h2>3. 단계별 업무 흐름 — 와이어프레임 우선 → 디자인·백엔드 병렬 → 프론트엔드</h2>
+              <p>본격 개발 전 Figma 와이어프레임으로 서비스 플로우를 확정합니다. 와이어프레임 확정 후 디자인이 시작되고, 그 사이 백엔드는 인프라·DB·API 설계부터 선행하여 병렬로 진행합니다. 디자인 확정 시점에 프론트엔드(앱/웹)가 본격 착수되어 백엔드와 양 트랙으로 진행됩니다.</p>
+              <ol>
+                <li><strong>① 킥오프 + 와이어프레임 + 설계 (Day 1–35)</strong> — 백로그 등록, Figma 와이어프레임, 요구사항/정책 확정, 아키텍처·ERD·API 규격 (M1)</li>
+                <li><strong>② 디자인 ∥ 백엔드·인프라 선행 (병렬)</strong> — 디자인 시스템·고해상도 시안 / AWS 인프라·BE 골격·DB·CI/CD</li>
+                <li><strong>③ 마켓·인증·SNS 핵심 개발 (Day 36–85)</strong> — FE#1 앱(가입·마켓·등급), FE#2 랜딩, BE 인증·등급·다국어 (M2)</li>
+                <li><strong>④ 정산·추적·콘솔 개발 (Day 86–145)</strong> — FE#2 관리자/판매자 웹, BE 추적링크·Payoneer 정산, AI 상담 (M3)</li>
+                <li><strong>⑤ 부가 기능 + 통합 QA (Day 146–170)</strong> — AI 숏폼·성과 리포트·랭킹, 다국어 마감, QA 통합 검증 (M4)</li>
+                <li><strong>⑥ 스토어 심사 + 안정화 납품 (Day 171–180)</strong> — iOS/Android 등록·심사, 매뉴얼·소스 이관 (M5)</li>
+              </ol>
+
+              <div class="not-prose mt-4 rounded-2xl border border-sky-200/70 bg-sky-50/60 p-4">
+                <p class="text-sm font-semibold text-sky-800 mb-2">팀 병렬 트랙 다이어그램 (180일)</p>
+                <svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                  <text x="40" y="18" font-family="SUIT Variable, sans-serif" font-size="11" font-weight="600" fill="#0f172a">기획·설계</text>
+                  <text x="200" y="18" font-family="SUIT Variable, sans-serif" font-size="11" font-weight="600" fill="#0f172a">디자인 ∥ BE 선행</text>
+                  <text x="380" y="18" font-family="SUIT Variable, sans-serif" font-size="11" font-weight="600" fill="#0f172a">FE+BE 본격 ∥ 외부연동</text>
+                  <text x="610" y="18" font-family="SUIT Variable, sans-serif" font-size="11" font-weight="600" fill="#0f172a">통합·QA·스토어</text>
+                  <line x1="40" y1="210" x2="690" y2="210" stroke="#cbd5e1" stroke-width="1"/>
+                  <text x="40" y="204" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">Day 1</text>
+                  <text x="180" y="204" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">35</text>
+                  <text x="360" y="204" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">85</text>
+                  <text x="560" y="204" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">145</text>
+                  <text x="668" y="204" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">180</text>
+                  <!-- 기획 -->
+                  <text x="6" y="44" font-family="SUIT Variable, sans-serif" font-size="9" font-weight="600" fill="#64748b">기획/PO</text>
+                  <rect x="40" y="34" width="150" height="20" rx="4" fill="#fde68a" stroke="#f59e0b"/><text x="115" y="48" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#78350f">요구사항·정책·설계</text>
+                  <rect x="190" y="34" width="500" height="20" rx="4" fill="#fef3c7" stroke="#f59e0b"/><text x="440" y="48" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#92400e">PO 총괄·스프린트 운영 (상시)</text>
+                  <!-- 디자인 -->
+                  <text x="6" y="74" font-family="SUIT Variable, sans-serif" font-size="9" font-weight="600" fill="#64748b">디자이너</text>
+                  <rect x="120" y="64" width="180" height="20" rx="4" fill="#fbcfe8" stroke="#ec4899"/><text x="210" y="78" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#831843">Figma 디자인 (~Day 70 확정)</text>
+                  <!-- BE -->
+                  <text x="6" y="104" font-family="SUIT Variable, sans-serif" font-size="9" font-weight="600" fill="#64748b">백엔드 ×1</text>
+                  <rect x="120" y="94" width="120" height="20" rx="4" fill="#bae6fd" stroke="#0284c7"/><text x="180" y="108" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#0c4a6e">인프라·DB·API 설계</text>
+                  <rect x="242" y="94" width="448" height="20" rx="4" fill="#0284c7"/><text x="466" y="108" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" font-weight="600" fill="#fff">다국어·SNS·추적·정산·AI 연동</text>
+                  <!-- FE1 -->
+                  <text x="6" y="134" font-family="SUIT Variable, sans-serif" font-size="9" font-weight="600" fill="#64748b">FE#1 앱</text>
+                  <rect x="270" y="124" width="420" height="20" rx="4" fill="#a7f3d0" stroke="#10b981"/><text x="480" y="138" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#064e3b">RN 앱 (마켓·등급·피드·랭킹·AI·숏폼)</text>
+                  <!-- FE2 -->
+                  <text x="6" y="164" font-family="SUIT Variable, sans-serif" font-size="9" font-weight="600" fill="#64748b">FE#2 웹</text>
+                  <rect x="270" y="154" width="420" height="20" rx="4" fill="#86efac" stroke="#16a34a"/><text x="480" y="168" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#14532d">랜딩 + 관리자/판매자 웹</text>
+                  <!-- QA -->
+                  <text x="6" y="192" font-family="SUIT Variable, sans-serif" font-size="9" font-weight="600" fill="#64748b">QA</text>
+                  <rect x="560" y="182" width="130" height="18" rx="4" fill="#e2e8f0" stroke="#94a3b8"/><text x="625" y="195" text-anchor="middle" font-family="SUIT Variable, sans-serif" font-size="9" fill="#475569">통합 QA·스토어 심사</text>
+                  <!-- 디자인 확정 마커 -->
+                  <line x1="270" y1="58" x2="270" y2="180" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,3"/>
+                  <text x="274" y="186" font-family="SUIT Variable, sans-serif" font-size="8" font-weight="600" fill="#ef4444">디자인 확정 → FE 착수</text>
+                </svg>
+              </div>
+
+              <h2>4. 의사결정·승인 프로세스 (비동기 우선)</h2>
+              <ul>
+                <li><strong>경미한 결정</strong>(UI 디테일·문구): Slack/카카오톡 비동기 협의 (4시간 이내 회신)</li>
+                <li><strong>중간 결정</strong>(API 스펙·정책 미세 조정): 정책 결정서에 제안 → 24시간 이내 코멘트/승인</li>
+                <li><strong>중대 결정</strong>(범위 변경·일정 영향): 스프린트 데모 또는 별도 화상 회의 → 회의록 + 변경 관리 대장 기록</li>
+              </ul>
+
+              <h2>5. 유지보수 운영안</h2>
+              <table>
+                <thead>
+                  <tr><th>구분</th><th>기간/방식</th><th>내용</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>무상 하자 보수</td><td>납품 후 <strong>3개월</strong></td><td>인수 범위 내 결함·버그 무상 수정, 긴급 이슈 우선 대응</td></tr>
+                  <tr><td>월 단위 유지보수</td><td>하자 보수 종료 후 (협의)</td><td>기능 개선·외부 API 정책 변경 대응·모니터링·정기 점검 (월 정액, 미팅 시 협의)</td></tr>
+                  <tr><td>긴급 대응</td><td>유지보수 계약 시</td><td>결제·정산 등 P0급 장애 우선 대응 채널 제공</td></tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+        </div>
+
         <!-- PAGE: 포트폴리오 -->
         <div id="page-portfolio" class="page-section space-y-6">
           <div class="rounded-2xl border border-slate-200/70 bg-white/95 p-5 shadow-soft backdrop-blur md:p-8">
             <article class="doc-content">
               <h1>유사 프로젝트 경험</h1>
-              <blockquote>본 프로젝트와 유사한 기능/기술 스택을 활용한 수행 경험을 소개합니다.</blockquote>
+              <blockquote>본 프로젝트와 유사한 기능/기술 스택을 활용한 수행 경험을 소개합니다. 아래는 검증된 화면 레이아웃을 본 프로젝트에 어떻게 재활용하는지 매핑한 목업입니다.</blockquote>
             </article>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft md:p-6">
+            <p class="mb-1 text-sm font-semibold text-sky-700">참고 레이아웃 → 본 프로젝트 매핑</p>
+            <p class="mb-3 text-sm text-slate-500">유사 프로젝트에서 검증된 화면 패턴을 본 프로젝트 화면에 재활용하여 리스크를 낮추고 완성도를 높입니다.</p>
+            <svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+              <!-- Left: source patterns -->
+              <text x="20" y="20" font-family="SUIT Variable, sans-serif" font-size="11" font-weight="700" fill="#0f172a">유사 프로젝트 검증 레이아웃</text>
+              <!-- Connectin feed -->
+              <rect x="20" y="32" width="150" height="92" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+              <text x="30" y="48" font-family="SUIT Variable, sans-serif" font-size="9" font-weight="600" fill="#0284c7">Connectin · 소셜 피드</text>
+              <circle cx="36" cy="64" r="6" fill="#fbcfe8"/><rect x="48" y="60" width="80" height="6" rx="3" fill="#e2e8f0"/>
+              <rect x="30" y="74" width="130" height="26" rx="4" fill="#e0f2fe"/>
+              <rect x="30" y="104" width="90" height="6" rx="3" fill="#e2e8f0"/>
+              <!-- Pilates dashboard -->
+              <rect x="20" y="132" width="150" height="46" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+              <text x="30" y="148" font-family="SUIT Variable, sans-serif" font-size="9" font-weight="600" fill="#0284c7">Pilates · 예약/대시보드</text>
+              <rect x="30" y="156" width="38" height="16" rx="3" fill="#a7f3d0"/><rect x="74" y="156" width="38" height="16" rx="3" fill="#bae6fd"/><rect x="118" y="156" width="42" height="16" rx="3" fill="#fde68a"/>
+              <!-- P2P settlement -->
+              <rect x="20" y="186" width="150" height="48" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+              <text x="30" y="202" font-family="SUIT Variable, sans-serif" font-size="9" font-weight="600" fill="#0284c7">P2P · 정산 대시보드</text>
+              <line x1="30" y1="212" x2="160" y2="212" stroke="#e2e8f0"/><rect x="30" y="216" width="130" height="6" rx="3" fill="#e2e8f0"/><rect x="30" y="226" width="100" height="6" rx="3" fill="#e2e8f0"/>
+              <!-- arrows -->
+              <path d="M180 78 L250 78" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+              <path d="M180 155 L250 130" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+              <path d="M180 210 L250 182" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+              <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#94a3b8"/></marker></defs>
+              <!-- Right: this project -->
+              <text x="260" y="20" font-family="SUIT Variable, sans-serif" font-size="11" font-weight="700" fill="#0f172a">본 프로젝트 적용 화면</text>
+              <rect x="260" y="32" width="200" height="92" rx="8" fill="#eff6ff" stroke="#0284c7"/>
+              <text x="272" y="50" font-family="SUIT Variable, sans-serif" font-size="9" font-weight="700" fill="#1d4ed8">앱 · 실시간 활동 피드 + 랭킹</text>
+              <circle cx="278" cy="68" r="6" fill="#bae6fd"/><rect x="290" y="64" width="150" height="6" rx="3" fill="#dbeafe"/>
+              <rect x="272" y="80" width="176" height="20" rx="4" fill="#dbeafe"/>
+              <rect x="272" y="106" width="120" height="6" rx="3" fill="#dbeafe"/>
+              <rect x="260" y="132" width="200" height="46" rx="8" fill="#eff6ff" stroke="#0284c7"/>
+              <text x="272" y="148" font-family="SUIT Variable, sans-serif" font-size="9" font-weight="700" fill="#1d4ed8">관리자 · 통계 카드 + 스케줄</text>
+              <rect x="272" y="156" width="52" height="16" rx="3" fill="#bae6fd"/><rect x="330" y="156" width="52" height="16" rx="3" fill="#bfdbfe"/><rect x="388" y="156" width="60" height="16" rx="3" fill="#dbeafe"/>
+              <rect x="260" y="186" width="200" height="48" rx="8" fill="#eff6ff" stroke="#0284c7"/>
+              <text x="272" y="202" font-family="SUIT Variable, sans-serif" font-size="9" font-weight="700" fill="#1d4ed8">관리자 · Payoneer 정산 큐</text>
+              <line x1="272" y1="212" x2="448" y2="212" stroke="#bfdbfe"/><rect x="272" y="216" width="176" height="6" rx="3" fill="#dbeafe"/><rect x="272" y="226" width="140" height="6" rx="3" fill="#dbeafe"/>
+              <!-- notes -->
+              <text x="480" y="50" font-family="SUIT Variable, sans-serif" font-size="9" fill="#475569">가로 아바타 + 무한 스크롤 피드</text>
+              <text x="480" y="64" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">이미지 캐싱·프리페치 패턴 재사용</text>
+              <text x="480" y="148" font-family="SUIT Variable, sans-serif" font-size="9" fill="#475569">사이드바 + 통계 카드 + 테이블</text>
+              <text x="480" y="162" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">B2B SaaS 운영 콘솔 패턴</text>
+              <text x="480" y="202" font-family="SUIT Variable, sans-serif" font-size="9" fill="#475569">정산 큐 + 상태 배지 + 무결성</text>
+              <text x="480" y="216" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">핀테크 정산 ledger 패턴</text>
+            </svg>
           </div>
 
           <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
@@ -802,10 +1094,10 @@
 
   <!-- ─── SPA Router ─── -->
   <script>
-    const pages = ['home', 'overview', 'estimate', 'manday', 'prd', 'timeline', 'portfolio'];
+    const pages = ['home', 'overview', 'estimate', 'manday', 'prd', 'timeline', 'process', 'portfolio'];
     const pageLabels = {
       home: '홈', overview: '프로젝트 소개', estimate: '견적서',
-      manday: '공수계산서', prd: 'PRD', timeline: '일정 제안', portfolio: '유사 프로젝트 경험'
+      manday: '공수계산서', prd: 'PRD', timeline: '일정 제안', process: '업무 프로세스', portfolio: '유사 프로젝트 경험'
     };
 
     function navigate(pageId) {
