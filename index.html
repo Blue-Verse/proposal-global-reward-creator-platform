@@ -919,6 +919,84 @@
             </svg>
           </div>
 
+          <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft md:p-6">
+            <p class="mb-1 text-sm font-semibold text-sky-700">참고 레이아웃 상세 (유사 프로젝트 실제 화면 구조)</p>
+            <p class="mb-3 text-sm text-slate-500">아래 화면 구조는 유사 프로젝트에서 검증된 실제 레이아웃으로, 본 프로젝트 화면 설계의 출발점으로 재활용합니다.</p>
+            <div class="grid gap-4 md:grid-cols-2">
+              <div class="rounded-2xl border border-slate-200 bg-slate-50/60 p-4">
+                <p class="mb-1 text-sm font-semibold text-slate-700">Connectin · 소셜 피드 (앱)</p>
+                <p class="mb-3 text-sm text-slate-500">상단 가로 아바타 + 무한 스크롤 피드 → 본 프로젝트 실시간 활동 피드·마켓에 재활용</p>
+                <svg viewBox="0 0 300 460" xmlns="http://www.w3.org/2000/svg" class="w-full max-w-[260px] mx-auto h-auto">
+                  <defs><linearGradient id="refFeedImg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#bae6fd"/><stop offset="1" stop-color="#c7d2fe"/></linearGradient></defs>
+                  <rect x="6" y="6" width="288" height="448" rx="30" fill="#0f172a"/>
+                  <rect x="14" y="14" width="272" height="432" rx="24" fill="#f8fafc"/>
+                  <rect x="120" y="20" width="60" height="12" rx="6" fill="#0f172a"/>
+                  <text x="28" y="58" font-family="SUIT Variable, sans-serif" font-size="15" font-weight="700" fill="#0f172a">피드</text>
+                  <!-- avatar row -->
+                  <circle cx="40" cy="92" r="16" fill="#fbcfe8" stroke="#ec4899" stroke-width="2"/>
+                  <circle cx="84" cy="92" r="16" fill="#a7f3d0" stroke="#10b981" stroke-width="2"/>
+                  <circle cx="128" cy="92" r="16" fill="#bae6fd" stroke="#0284c7" stroke-width="2"/>
+                  <circle cx="172" cy="92" r="16" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/>
+                  <circle cx="216" cy="92" r="16" fill="#fecaca" stroke="#ef4444" stroke-width="2"/>
+                  <line x1="22" y1="120" x2="278" y2="120" stroke="#e2e8f0"/>
+                  <!-- feed item -->
+                  <circle cx="38" cy="142" r="13" fill="#bae6fd"/><rect x="58" y="134" width="90" height="7" rx="3" fill="#e2e8f0"/><rect x="58" y="147" width="60" height="6" rx="3" fill="#eef2f6"/>
+                  <rect x="22" y="164" width="256" height="120" rx="10" fill="url(#refFeedImg)"/>
+                  <rect x="22" y="294" width="120" height="7" rx="3" fill="#e2e8f0"/>
+                  <text x="22" y="320" font-family="SUIT Variable, sans-serif" font-size="10" fill="#475569">♡ 32  💬 5  🔖  · 클릭 시 전환</text>
+                  <!-- feed item 2 -->
+                  <circle cx="38" cy="352" r="13" fill="#a7f3d0"/><rect x="58" y="344" width="90" height="7" rx="3" fill="#e2e8f0"/>
+                  <rect x="22" y="368" width="256" height="56" rx="10" fill="#dbeafe"/>
+                </svg>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-slate-50/60 p-4">
+                <p class="mb-1 text-sm font-semibold text-slate-700">Series B / EZ-Approve · B2B SaaS 운영 콘솔</p>
+                <p class="mb-3 text-sm text-slate-500">사이드바 + 통계 카드 + 관리 테이블 → 본 프로젝트 관리자/판매자 콘솔에 재활용</p>
+                <svg viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                  <rect x="0" y="0" width="460" height="300" rx="10" fill="#f8fafc"/>
+                  <rect x="0" y="0" width="110" height="300" fill="#0f172a"/>
+                  <text x="12" y="26" font-family="SUIT Variable, sans-serif" font-size="11" font-weight="700" fill="#e2e8f0">Admin</text>
+                  <rect x="8" y="42" width="94" height="20" rx="5" fill="#0284c7"/><text x="14" y="56" font-family="SUIT Variable, sans-serif" font-size="9" fill="#e0f2fe">대시보드</text>
+                  <text x="14" y="82" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">회원/권한 관리</text>
+                  <text x="14" y="104" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">정산 관리</text>
+                  <text x="14" y="126" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">콘텐츠/공지</text>
+                  <text x="14" y="148" font-family="SUIT Variable, sans-serif" font-size="9" fill="#94a3b8">감사 로그</text>
+                  <rect x="124" y="20" width="100" height="50" rx="6" fill="#fff" stroke="#e2e8f0"/><text x="134" y="38" font-family="SUIT Variable, sans-serif" font-size="8" fill="#64748b">활성 사용자</text><text x="134" y="58" font-family="SUIT Variable, sans-serif" font-size="15" font-weight="700" fill="#0284c7">2,180</text>
+                  <rect x="232" y="20" width="100" height="50" rx="6" fill="#fff" stroke="#e2e8f0"/><text x="242" y="38" font-family="SUIT Variable, sans-serif" font-size="8" fill="#64748b">월 처리액</text><text x="242" y="58" font-family="SUIT Variable, sans-serif" font-size="15" font-weight="700" fill="#0284c7">$92K</text>
+                  <rect x="340" y="20" width="104" height="50" rx="6" fill="#fff" stroke="#e2e8f0"/><text x="350" y="38" font-family="SUIT Variable, sans-serif" font-size="8" fill="#64748b">승인 대기</text><text x="350" y="58" font-family="SUIT Variable, sans-serif" font-size="15" font-weight="700" fill="#f59e0b">37</text>
+                  <rect x="124" y="82" width="320" height="196" rx="6" fill="#fff" stroke="#e2e8f0"/>
+                  <text x="134" y="102" font-family="SUIT Variable, sans-serif" font-size="10" font-weight="600" fill="#0f172a">관리 테이블 (역할별 권한)</text>
+                  <line x1="134" y1="112" x2="434" y2="112" stroke="#e2e8f0"/>
+                  <line x1="134" y1="140" x2="434" y2="140" stroke="#eef2f6"/><line x1="134" y1="168" x2="434" y2="168" stroke="#eef2f6"/><line x1="134" y1="196" x2="434" y2="196" stroke="#eef2f6"/><line x1="134" y1="224" x2="434" y2="224" stroke="#eef2f6"/>
+                  <rect x="134" y="124" width="80" height="7" rx="3" fill="#e2e8f0"/><rect x="250" y="124" width="60" height="7" rx="3" fill="#e2e8f0"/><rect x="392" y="120" width="40" height="14" rx="7" fill="#dcfce7"/>
+                  <rect x="134" y="152" width="80" height="7" rx="3" fill="#e2e8f0"/><rect x="250" y="152" width="60" height="7" rx="3" fill="#e2e8f0"/><rect x="392" y="148" width="40" height="14" rx="7" fill="#fef3c7"/>
+                  <rect x="134" y="180" width="80" height="7" rx="3" fill="#e2e8f0"/><rect x="250" y="180" width="60" height="7" rx="3" fill="#e2e8f0"/><rect x="392" y="176" width="40" height="14" rx="7" fill="#dcfce7"/>
+                  <rect x="134" y="208" width="80" height="7" rx="3" fill="#e2e8f0"/><rect x="250" y="208" width="60" height="7" rx="3" fill="#e2e8f0"/><rect x="392" y="204" width="40" height="14" rx="7" fill="#dcfce7"/>
+                </svg>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-slate-50/60 p-4 md:col-span-2">
+                <p class="mb-1 text-sm font-semibold text-slate-700">P2P · 정산 ledger 대시보드</p>
+                <p class="mb-3 text-sm text-slate-500">정산 큐 + 상태 배지 + 거래 내역 ledger → 본 프로젝트 Payoneer 글로벌 정산에 재활용</p>
+                <svg viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                  <rect x="0" y="0" width="680" height="200" rx="10" fill="#f8fafc"/>
+                  <text x="20" y="28" font-family="SUIT Variable, sans-serif" font-size="12" font-weight="700" fill="#0f172a">정산 ledger</text>
+                  <rect x="20" y="40" width="150" height="48" rx="6" fill="#fff" stroke="#e2e8f0"/><text x="30" y="58" font-family="SUIT Variable, sans-serif" font-size="8" fill="#64748b">정산 예정 합계</text><text x="30" y="78" font-family="SUIT Variable, sans-serif" font-size="14" font-weight="700" fill="#0284c7">$92,400</text>
+                  <rect x="180" y="40" width="150" height="48" rx="6" fill="#fff" stroke="#e2e8f0"/><text x="190" y="58" font-family="SUIT Variable, sans-serif" font-size="8" fill="#64748b">대기 건수</text><text x="190" y="78" font-family="SUIT Variable, sans-serif" font-size="14" font-weight="700" fill="#f59e0b">37건</text>
+                  <rect x="340" y="40" width="320" height="140" rx="6" fill="#fff" stroke="#e2e8f0"/>
+                  <text x="350" y="58" font-family="SUIT Variable, sans-serif" font-size="9" font-weight="600" fill="#0f172a">정산 큐 (멱등·재시도·무결성)</text>
+                  <line x1="350" y1="66" x2="650" y2="66" stroke="#e2e8f0"/>
+                  <rect x="350" y="78" width="90" height="7" rx="3" fill="#e2e8f0"/><rect x="470" y="78" width="50" height="7" rx="3" fill="#e2e8f0"/><rect x="600" y="74" width="44" height="14" rx="7" fill="#dcfce7"/>
+                  <rect x="350" y="100" width="90" height="7" rx="3" fill="#e2e8f0"/><rect x="470" y="100" width="50" height="7" rx="3" fill="#e2e8f0"/><rect x="600" y="96" width="44" height="14" rx="7" fill="#fef3c7"/>
+                  <rect x="350" y="122" width="90" height="7" rx="3" fill="#e2e8f0"/><rect x="470" y="122" width="50" height="7" rx="3" fill="#e2e8f0"/><rect x="600" y="118" width="44" height="14" rx="7" fill="#fef3c7"/>
+                  <rect x="350" y="144" width="90" height="7" rx="3" fill="#e2e8f0"/><rect x="470" y="144" width="50" height="7" rx="3" fill="#e2e8f0"/><rect x="600" y="140" width="44" height="14" rx="7" fill="#dcfce7"/>
+                  <rect x="20" y="100" width="310" height="80" rx="6" fill="#eff6ff" stroke="#bfdbfe"/>
+                  <text x="30" y="120" font-family="SUIT Variable, sans-serif" font-size="9" font-weight="700" fill="#1d4ed8">거래 내역 (Audit Log)</text>
+                  <rect x="30" y="130" width="280" height="6" rx="3" fill="#dbeafe"/><rect x="30" y="144" width="240" height="6" rx="3" fill="#dbeafe"/><rect x="30" y="158" width="260" height="6" rx="3" fill="#dbeafe"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
           <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
             <div class="rounded-2xl border border-slate-200/70 bg-white/90 p-4 text-center shadow-soft backdrop-blur">
               <p class="text-2xl font-bold text-sky-700">React Native</p>
